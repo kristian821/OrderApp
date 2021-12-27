@@ -11,6 +11,10 @@
 		EAFEA8332772E7B600B1C746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEA8322772E7B600B1C746 /* ContentView.swift */; };
 		EAFEA8352772E7B800B1C746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFEA8342772E7B800B1C746 /* Assets.xcassets */; };
 		EAFEA8382772E7B800B1C746 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFEA8372772E7B800B1C746 /* Preview Assets.xcassets */; };
+		EAFEA8402772EA9F00B1C746 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEA83F2772EA9F00B1C746 /* MenuItem.swift */; };
+		EAFEA8422772ECFA00B1C746 /* MenuItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEA8412772ECFA00B1C746 /* MenuItemController.swift */; };
+		EAFEA8462772F0B300B1C746 /* MenuItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEA8452772F0B300B1C746 /* MenuItemListView.swift */; };
+		EAFEA8482772F0C700B1C746 /* MenuItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEA8472772F0C700B1C746 /* MenuItemCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		EAFEA8322772E7B600B1C746 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAFEA8342772E7B800B1C746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFEA8372772E7B800B1C746 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAFEA83E2772E7FF00B1C746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EAFEA83F2772EA9F00B1C746 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		EAFEA8412772ECFA00B1C746 /* MenuItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemController.swift; sourceTree = "<group>"; };
+		EAFEA8452772F0B300B1C746 /* MenuItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemListView.swift; sourceTree = "<group>"; };
+		EAFEA8472772F0C700B1C746 /* MenuItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		EAFEA82F2772E7B600B1C746 /* OrderApp */ = {
 			isa = PBXGroup;
 			children = (
+				EAFEA83E2772E7FF00B1C746 /* Info.plist */,
 				EAFEA8302772E7B600B1C746 /* OrderAppApp.swift */,
 				EAFEA8322772E7B600B1C746 /* ContentView.swift */,
+				EAFEA8452772F0B300B1C746 /* MenuItemListView.swift */,
+				EAFEA8472772F0C700B1C746 /* MenuItemCellView.swift */,
+				EAFEA83F2772EA9F00B1C746 /* MenuItem.swift */,
+				EAFEA8412772ECFA00B1C746 /* MenuItemController.swift */,
 				EAFEA8342772E7B800B1C746 /* Assets.xcassets */,
 				EAFEA8362772E7B800B1C746 /* Preview Content */,
 			);
@@ -137,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFEA8482772F0C700B1C746 /* MenuItemCellView.swift in Sources */,
+				EAFEA8422772ECFA00B1C746 /* MenuItemController.swift in Sources */,
+				EAFEA8402772EA9F00B1C746 /* MenuItem.swift in Sources */,
 				EAFEA8332772E7B600B1C746 /* ContentView.swift in Sources */,
+				EAFEA8462772F0B300B1C746 /* MenuItemListView.swift in Sources */,
 				EAFEA8312772E7B600B1C746 /* OrderAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +290,7 @@
 				DEVELOPMENT_TEAM = X96456HN7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrderApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,7 +301,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.OrderApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kristian-Mitchell-example.OrderApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,6 +320,7 @@
 				DEVELOPMENT_TEAM = X96456HN7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrderApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,7 +331,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.OrderApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kristian-Mitchell-example.OrderApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
